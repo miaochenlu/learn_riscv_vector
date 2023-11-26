@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "5ebe8041b3f2c743",
+    "type": "split",
+    "children": [
+      {
+        "id": "f8be3b85de684464",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8584fb43c0a62603",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "974cb831e773ac2b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "rvv_isa/param_and_register.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ee0684e47b6bbc19",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "rvv_isa/param_and_register.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "761c539cacb30b2b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a8cef1846c1a39a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "vpu_designs/hwacha.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2e045eab624d207a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "rvv_isa/param_and_register.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "bc65dcd671ff4401",
+    "type": "split",
+    "children": [
+      {
+        "id": "eaf68cd4f17e4a8a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "328e1656b9b93cc7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d3af0b1e1d48531b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a5f76b4452463756",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "71b1155bc50eb306",
+    "type": "split",
+    "children": [
+      {
+        "id": "78f9bbf7b7c25465",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f6f3097c2bd71b24",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "rvv_isa/param_and_register.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6ab7ce0d47fe11d8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "rvv_isa/param_and_register.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "76bca723e97769ba",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8f2327ed60d04c96",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "rvv_isa/param_and_register.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "2e045eab624d207a",
+  "lastOpenFiles": [
+    "README.md",
+    "vpu_designs/t1.md",
+    "vpu_designs/hwacha.md",
+    "vpu_designs/ara.md",
+    "rvv_isa/param_and_register.md",
+    "vpu_designs",
+    "attachments/Pasted image 20231126211839.png",
+    "attachments",
+    "Param.md",
+    "rvv_isa"
+  ]
+}
