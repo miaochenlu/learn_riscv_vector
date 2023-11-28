@@ -105,7 +105,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#groups",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,11 +122,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "71b1155bc50eb306",
@@ -206,13 +208,16 @@
   },
   "active": "2e045eab624d207a",
   "lastOpenFiles": [
+    "rvv_isa/attachments/Pasted image 20231128192333.png",
+    "rvv_isa/attachments/Pasted image 20231126211839.png",
+    "rvv_isa/param_and_register.md",
+    "rvv_isa/attachments/Pasted image 20231127130905.png",
+    "rvv_isa/attachments",
     "README.md",
     "vpu_designs/t1.md",
     "vpu_designs/hwacha.md",
     "vpu_designs/ara.md",
-    "rvv_isa/param_and_register.md",
     "vpu_designs",
-    "attachments/Pasted image 20231126211839.png",
     "attachments",
     "Param.md",
     "rvv_isa"
