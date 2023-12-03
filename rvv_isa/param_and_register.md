@@ -109,8 +109,6 @@ note:
 
 ## 1.4. vstart (vector start index)
 
-![](rvv_isa/attachments/Pasted%20image%2020231127130905.png)
-
 通常，vstart只在vector指令发生trap的时候被修改，代表vstart的位置发生了trap（不包括illegal-instruction exceptions）, 在该位置resume指令执行。
 执行时，vstart位置之前的vector register保持undisturbed,执行后vstart重置为0
 
@@ -137,6 +135,16 @@ note:
 |2:1|vxrm[1:0]|Fixed-point rounding mode|
 |0|vxsat|Fixed-point accrued saturation flag|
 
+# 2. Mapping of Vector Elements to Vector Register State
+
+首先约定低位element对应低地址
+![](rvv_isa/attachments/Pasted%20image%2020231129221401.png)
+
+![](rvv_isa/attachments/Pasted%20image%2020231129221203.png)
+
+![](rvv_isa/attachments/Pasted%20image%2020231129221240.png)
+
+![](rvv_isa/attachments/Pasted%20image%2020231129221303.png)
 # References
 * https://eupilot.eu/wp-content/uploads/2022/11/RISC-V-VectorExtension-1-1.pdf
 * https://www.francisz.cn/2022/03/23/riscv-vector/
