@@ -100,50 +100,50 @@ WRITE_RD(P.VU.set_vl(insn.rd(), insn.rs1(), RS1, insn.v_zimm11()));
 ```cpp
 reg_t vectorUnit_t::vectorUnit_t::set_vl(int rd, int rs1, reg_t reqVL, reg_t newType)
 {
-  int new_vlmul = 0;
-  // set vtype
-  if (vtype->read() != newType) {
-	//sew, lmul, ta, ma, 以及 vlmax的设置
-	vsew = 1 << (extract64(newType, 3, 3) + 3);
-	new_vlmul = int8_t(extract64(newType, 0, 3) << 5) >> 5;
-	vflmul = new_vlmul >= 0 ? 1 << new_vlmul : 1.0 / (1 << -new_vlmul);
-	vlmax = (VLEN/vsew) * vflmul;
-	vta = extract64(newType, 6, 1);
-	vma = extract64(newType, 7, 1);
+	int new_vlmul = 0;
+	// set vtype
+	if (vtype->read() != newType) {
+		//sew, lmul, ta, ma, 以及 vlmax的设置
+		vsew = 1 << (extract64(newType, 3, 3) + 3);
+		new_vlmul = int8_t(extract64(newType, 0, 3) << 5) >> 5;
+		vflmul = new_vlmul >= 0 ? 1 << new_vlmul : 1.0 / (1 << -new_vlmul);
+		vlmax = (VLEN/vsew) * vflmul;
+		vta = extract64(newType, 6, 1);
+		vma = extract64(newType, 7, 1);
 
-	// 如果vtype设定不合法，则set vill bit
-	vill = !(vflmul >= 0.125 && vflmul <= 8)
-		   || vsew > std::min(vflmul, 1.0f) * ELEN
-		   || (newType >> 8) != 0;
+		// 如果vtype设定不合法，则set vill bit
+		vill = !(vflmul >= 0.125 && vflmul <= 8)
+			|| vsew > std::min(vflmul, 1.0f) * ELEN
+			|| (newType >> 8) != 0;
 
-    if (vill) {
-	  // vtype除了vill都设置为0，vl也设置为0(通过将vlmax设置为0)
-	  vlmax = 0;
-	  vtype->write_raw(UINT64_MAX << (p->get_xlen() - 1));
-    } else {
-	  // 合法的话，将newType写入vtype
-      vtype->write_raw(newType);
-    }
-  }
+		if (vill) {
+			// vtype除了vill都设置为0，vl也设置为0(通过将vlmax设置为0)
+			vlmax = 0;
+			vtype->write_raw(UINT64_MAX << (p->get_xlen() - 1));
+		} else {
+			// 合法的话，将newType写入vtype
+			vtype->write_raw(newType);
+		}
+	}
 
-  // set vl
-  if (vlmax == 0) {
-    vl->write_raw(0);
-  } else if (rd == 0 && rs1 == 0) {
-	// 如果rd和rs1都是0，保留当前vl的值
-	// 如果因为vsetvl指令改变了vlmax, 则也需要判断vlmax和原vl值的大小
-    vl->write_raw(std::min(vl->read(), vlmax));
-  } else if (rd != 0 && rs1 == 0) {
-    // 如果rs1是0，将vl设置为vlmax
-    vl->write_raw(vlmax);
-  } else if (rs1 != 0) {
-    // 如果rs1非0，则将vl设置为min(AVL, vlmax)
-    vl->write_raw(std::min(reqVL, vlmax));
-  }
+	// set vl
+	if (vlmax == 0) {
+		vl->write_raw(0);
+	} else if (rd == 0 && rs1 == 0) {
+		// 如果rd和rs1都是0，保留当前vl的值
+		// 如果因为vsetvl指令改变了vlmax, 则也需要判断vlmax和原vl值的大小
+		vl->write_raw(std::min(vl->read(), vlmax));
+	} else if (rd != 0 && rs1 == 0) {
+		// 如果rs1是0，将vl设置为vlmax
+		vl->write_raw(vlmax);
+	} else if (rs1 != 0) {
+		// 如果rs1非0，则将vl设置为min(AVL, vlmax)
+		vl->write_raw(std::min(reqVL, vlmax));
+	}
 
-  vstart->write_raw(0);
-  setvl_count++;
-  return vl->read();
+	vstart->write_raw(0);
+	setvl_count++;
+	return vl->read();
 }
 ```
 
