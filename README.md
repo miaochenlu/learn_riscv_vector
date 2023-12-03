@@ -5,6 +5,7 @@
 # 1. ISA
 
 - [Constant Parameters & Registers](rvv_isa/param_and_register.md)
+- [Instruction Formats](rvv_isa/inst_format.md)
 - [Configuration-Setting Instructions](rvv_isa/config_insts.md)
 - [Exception Handling](rvv_isa/exception_handling.md)
 

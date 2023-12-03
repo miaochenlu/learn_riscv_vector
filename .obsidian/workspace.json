@@ -110,9 +110,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "445750ba70fa6214",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -178,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "rvv_isa/config_insts.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -195,7 +207,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "rvv_isa/config_insts.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -218,7 +230,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "rvv_isa/config_insts.md"
+                "file": "README.md"
               }
             }
           }
@@ -240,25 +252,28 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5a017b55d080958b",
+  "active": "445750ba70fa6214",
   "lastOpenFiles": [
+    "rvv_isa/inst_format.md",
+    "rvv_isa/attachments/Pasted image 20231203204631.png",
+    "rvv_isa/attachments/Pasted image 20231203204552.png",
+    "rvv_isa/attachments/Pasted image 20231203202158.png",
+    "rvv_isa/attachments/Pasted image 20231203202126.png",
+    "rvv_isa/attachments/Pasted image 20231203191804.png",
+    "rvv_isa/attachments/Pasted image 20231203191755.png",
+    "rvv_isa/attachments/Pasted image 20231203191719.png",
+    "rvv_isa/attachments/Pasted image 20231203191627.png",
+    "rvv_isa/attachments/Pasted image 20231203191559.png",
+    "rvv_isa/config_insts.md",
     "rvv_isa/exception_handling.md",
     "rvv_isa/param_and_register.md",
     "README.md",
     "vpu_designs/t1.md",
     "vpu_designs/hwacha.md",
     "vpu_designs/ara.md",
-    "rvv_isa/config_insts.md",
     "rvv_isa/attachments/Pasted image 20231127130905.png.md",
     "rvv_isa/attachments/Pasted image 20231127130905.png",
     "Param.md",
-    "rvv_isa/attachments/Pasted image 20231202193738.png",
-    "rvv_isa/attachments/Pasted image 20231129221401.png",
-    "rvv_isa/attachments/Pasted image 20231129221303.png",
-    "rvv_isa/attachments/Pasted image 20231129221240.png",
-    "rvv_isa/attachments/Pasted image 20231129221203.png",
-    "rvv_isa/attachments/Pasted image 20231128192333.png",
-    "rvv_isa/attachments/Pasted image 20231126211839.png",
     "rvv_isa/attachments",
     "vpu_designs",
     "attachments",
